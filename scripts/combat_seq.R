@@ -58,10 +58,10 @@ plotPCA(vsd_corr, intgroup = "tcga.cgc_case_batch_number") +
 
 
 
+save(adjusted_counts, file = "combat.RData")
 
 
-
-
+dds_corr <- DESeq(dds_corr)
 
 
 
